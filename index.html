@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Photography Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="hero">
+        <video class="hero-video" autoplay loop muted>
+            <source src="hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover amazing content and join our community.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+    <header class="dark-theme stock-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Website Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="signin-btn">Sign In</a></li>
+                    <li><a href="#" id="signup-btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Sign In Modal -->
+<div id="signin-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="signin-close">&times;</span>
+        <form id="signin-form">
+            <h2>Sign In</h2>
+            <label for="signin-email">Email:</label>
+            <input type="email" id="signin-email" name="email" required>
+            <div id="signin-email-error" class="error"></div>
+            <label for="signin-password">Password:</label>
+            <input type="password" id="signin-password" name="password" required>
+            <div id="signin-password-error" class="error"></div>
+            <button type="submit">Sign In</button>
+            <div id="signin-general-error" class="error"></div>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </form>
+    </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="signup-close">&times;</span>
+        <form id="signup-form">
+            <h2>Sign Up</h2>
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" name="email" required>
+            <div id="signup-email-error" class="error"></div>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" name="password" required>
+            <div id="signup-password-error" class="error"></div>
+            <button type="submit">Sign Up</button>
+            <div id="signup-general-error" class="error"></div>
+        </form>
+    </div>
+</div>
+
+<!-- Other sections of the website go here -->
+<section class="hero">
+    <div class="container">
+        <h1>Find the Perfect Image for Your Project</h1>
+        <p>Explore our vast collection of high-quality stock photos</p>
+        <a href="#" class="btn">Explore Now</a>
+    </div>
+</section>
+
+
+<section class="form-section dark-theme" id="">
+    <div class="container">
+        <div class="form-container">
+            <h2>Sign In</h2>
+            <form action="#" method="POST" class="sign-in-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="divider"></div>
+            <div class="social-login">
+                <button class="btn facebook">Sign in with Facebook</button>
+                <button class="btn twitter">Sign in with Twitter</button>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form-section dark-theme">
+    <div class="container">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST" class="sign-up-form">
+                <div class="input-group">
+                    <label for="new-email">Email</label>
+                    <input type="email" id="new-email" name="new-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="new-password">Password</label>
+                    <input type="password" id="new-password" name="new-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- featured categories -->
+<section class="featured-categories dark-theme">
+    <div class="container">
+        <h2>Featured Categories</h2>
+        <div class="category-grid">
+            <div class="category">
+                <img src="category1.jpg" alt="Category 1">
+                <h3>Nature</h3>
+            </div>
+            <div class="category">
+                <img src="category2.jpg" alt="Category 2">
+                <h3>Business</h3>
+            </div>
+            <div class="category">
+                <img src="category3.jpg" alt="Category 3">
+                <h3>Travel</h3>
+            </div>
+            <!-- Add more categories as needed -->
+        </div>
+    </div>
+</section>
+<!-- benifits section -->
+<section class="benefits dark-theme">
+    <div class="container">
+        <h2>Benefits of Using Our Service</h2>
+        <div class="benefit">
+            <img src="benefit1-icon.png" alt="Benefit 1 Icon">
+            <h3>High-Quality Images</h3>
+            <p>Access a vast collection of high-resolution, professionally captured images for your projects.</p>
+        </div>
+        <div class="benefit">
+            <img src="benefit2-icon.png" alt="Benefit 2 Icon">
+            <h3>Affordable Pricing</h3>
+            <p>Enjoy competitive pricing plans that fit your budget without compromising on quality.</p>
+        </div>
+        <div class="benefit">
+            <img src="benefit3-icon.png" alt="Benefit 3 Icon">
+            <h3>Diverse Collection</h3>
+            <p>Discover a diverse range of images spanning various categories and themes to meet your needs.</p>
+        </div>
+        <!-- Add more benefits as needed -->
+    </div>
+</section>
+
+<!-- how it works section -->
+<section class="how-it-works dark-theme">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="step1-icon.png" alt="Step 1 Icon">
+                <h3>Search</h3>
+                <p>Use our search feature to find the perfect image for your project.</p>
+            </div>
+            <div class="step">
+                <img src="step2-icon.png" alt="Step 2 Icon">
+                <h3>Select</h3>
+                <p>Browse through our collection and select the image that best fits your needs.</p>
+            </div>
+            <div class="step">
+                <img src="step3-icon.png" alt="Step 3 Icon">
+                <h3>Download</h3>
+                <p>Download the chosen image in high-resolution and use it for your project.</p>
+            </div>
+            <!-- Add more steps as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- testimonials -->
+<section class="testimonials dark-theme">
+    <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"Great service! The images are high-quality and exactly what I needed for my project."</p>
+                <p class="author">- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"I've been using this website for years, and I'm always impressed by the selection and quality of images."</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+    </div>
+</section>
+<!-- call to action -->
+<section class="cta dark-theme">
+    <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Sign up now and access our extensive collection of high-quality stock photos!</p>
+        <a href="#" class="btn">Sign Up</a>
+    </div>
+</section>
+<!-- footer -->
+<footer class="dark-theme">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla est at velit suscipit.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Email: contact@example.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>Address: 123 Main Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Stock Photography Website. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
